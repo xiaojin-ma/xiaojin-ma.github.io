@@ -1,0 +1,163 @@
+---
+layout: page
+title: "Publications"
+#description: ".."
+header-img: "img/bunny.jpg"
+---
+
+<!-- Language Selector -->
+<!-- <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+    <option value="0" selected> 中文 Chinese </option>
+    <option value="1"> 英文 English </option>
+</select> -->
+
+<!-- Chinese Version -->
+<div class="zh post-container">
+
+        
+<h3 id="toc_0">Journal Articles</h3>
+
+<ul>
+<li>Abrams, R., Ma, X. (in press). Spatial Task Relevance Modulates Value-Driven Attentional Capture. <i>Attention, Perception,& Psychophysics</i></li>
+<li>Huang, J., He, X., <b>Ma, X.</b>, Ren, Y., Zhao, T., Zeng X, et al. (2018). Sequential biases on subjective judgments: Evidence from face attractiveness and ringtone agreeableness judgment. Plos one, 13(6), e0198723.<a href="https://doi.org/10.1371/journal.pone.0198723" target="_blank">https://doi.org/10.1371/journal.pone.0198723</a></li></li>
+</ul>
+
+<h3 id="toc_1">Conference Presentations</h3>
+
+<ul>
+<li><b>Ji, H.</b>, Wang, K., Kong, G., Mao, H., Zhang, X., & Ding, X.<sup>*</sup> (2021). How does working memory work? 
+    Objects but not Boolean Maps as the manipulation unit of working memory. Poster presented at the annual meeting of the Vision Sciences Society, 5/25/21, Online.  </li></li>
+<li>Yang, Z., <b>Ji, H.</b>, Chen, W., Ren, Y.<sup>*</sup> (2021). Category Learning of Medical Images: How does Comparison Help? Poster presented at the annual meeting of the Vision Sciences Society, 5/25/21, Online. </li>
+<li>Li, W., <b>Ji, H.</b>, Gao, Z., Ding, X.<sup>*</sup> (2021). Memory superiority for interactive biological motion in working memory. Poster presented at the annual meeting of the Vision Sciences Society, 5/25/21, Online.</li>
+<li>He, W., <b>Ji, H.</b>, Gao, Z., Ding, X.<sup>*</sup>(2021). The fate of surface features in moving object when crossing a tunnel. Poster presented at the annual meeting of the Vision Sciences Society, 5/25/21, Online.</li>
+<li>Li, Y., Ding, X.<sup>*</sup>, Qian, J., Su, Z., <b>Ji, H.</b>, (2021). Serial dependence in biological motion perception. Poster presented at the annual meeting of the Vision Sciences Society, 5/24/21, Online.</li>
+<li><b>Ji, H.<sup>#</sup></b>, Yin, J.<sup>#</sup>, Huang, Y.<sup>*</sup>, & Ding, X.<sup>*</sup> (2020). Event-based attention: Selective 
+    attention can operate interactive biological motion as a Unit. <a href="../Poster.pdf" target="_blank">Poster</a> presented at 
+    the annual meeting of the Vision Sciences Society, 6/12/20, Online.<a href=" https://doi.org/10.1167/jov.20.11.203 " target="_blank"> https://doi.org/10.1167/jov.20.11.203 </a></li>
+<li><b>Ji, H.</b>, Wang, K., Mao, H., Zhang, X., & Ding, X.<sup>*</sup> (2020). How does working memory 
+    work? The manipulation unit of visual working memory. Talk given at the Virtual Working Memory 
+    Symposium</a>, 6/3/20, Online.</li>
+<li><b>Ji, H.</b>, & Pan, J. S.<sup>*</sup> (2019). Can I choose a throwable object for you? Perceiving 
+    affordances for other individuals. Poster presented at the 4th China Vision Science Conference, 
+    7/7/19, Chengdu, Sichuan, China.</li>
+
+</ul>
+
+<h3 id="toc_2">Manuscripts</h3>
+
+<ul>
+<li><b>Ji, H.</b>, Wang, K., Kong, G., Zhang, X., He, W., Mao, H., & Ding, X.<sup>*</sup> (in preparation). How does working 
+         memory work? Objects but not Boolean maps as the manipulation unit of  working memory.</li>
+<li>Ding, X., Li, H., <b>Ji, H.</b>, Dai, H., Shen, M. <sup>*</sup>, & Gao, Z. <sup>*</sup> (in preparation). Processing 
+         superiority for interactive biological motion in working memory. [working title]</li>
+<li>He, W., <b>Ji, H.<sup>*</sup></b>, & Ding, X.<sup>*</sup> (in preparation). The fate of surface features in 
+         moving object when crossing a tunnel. [working title]</li>
+<li>Su, Z., Xie, J., Zhao, Y., Zhou, C., <b>Ji, H.</b><sup>*</sup>, & Ding, X.<sup>*</sup> (in preparation). Physiological mechanisms of episodic memory 
+    retrieval: New findings from intracranial sharp-wave ripples. (in Chinese)
+</ul>
+
+
+<hr>
+
+<small> <font color="a0a9a9">
+<b>Notes：</b>
+<li>#: co-first author; *: corresponding author</li>
+
+</font>
+<small>
+        
+</div>
+
+<!-- English Version -->
+<!-- <div class="en post-container">
+    <blockquote><p>Yet another iOS Developer. <br>
+    Yet another Life-long Student.</p></blockquote>
+
+</div> -->
+
+<!-- Handle Language Change -->
+<script type="text/javascript">
+    // get nodes
+    var $zh = document.querySelector(".zh");
+    var $en = document.querySelector(".en");
+    var $select = document.querySelector("select");
+
+    // bind hashchange event
+    window.addEventListener('hashchange', _render);
+
+    // handle render
+    function _render(){
+        var _hash = window.location.hash;
+        // en
+        if(_hash == "#en"){
+            $select.selectedIndex = 1;
+            $en.style.display = "block";
+            $zh.style.display = "none";
+        // zh by default
+        }else{
+            // not trigger onChange, otherwise cause a loop call.
+            $select.selectedIndex = 0;
+            $zh.style.display = "block";
+            $en.style.display = "none";
+        }
+    }
+
+    // handle select change
+    function onLanChange(index){
+        if(index == 0){
+            window.location.hash = "#zh"
+        }else{
+            window.location.hash = "#en"
+        }
+    }
+
+    // init
+    _render();
+</script>
+
+
+<!-- Gitalk 评论 start  
+{% if site.gitalk.enable %}
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+    <script type="text/javascript">
+    var gitalk = new Gitalk({
+    clientID: '{{site.gitalk.clientID}}',
+    clientSecret: '{{site.gitalk.clientSecret}}',
+    repo: '{{site.gitalk.repo}}',
+    owner: '{{site.gitalk.owner}}',
+    admin: ['{{site.gitalk.admin}}'],
+    distractionFreeMode: {{site.gitalk.distractionFreeMode}},
+    id: 'resources',
+    });
+    gitalk.render('gitalk-container');
+</script>
+{% endif %}
+Gitalk end -->
+
+ <!-- disqus 评论框 start  -->
+{% if site.disqus.enable %}
+
+<div class="comment">
+    <div id="disqus_thread" class="disqus-thread">
+    </div>
+</div>
+<!-- disqus 评论框 end -->
+
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "{{site.disqus.username}}";
+    var disqus_identifier = "{{site.disqus.username}}/{{page.url}}";
+    var disqus_url = "{{site.url}}{{page.url}}";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+{% endif %}
