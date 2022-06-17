@@ -1,7 +1,7 @@
 # Site settings
 title: Xiaojin Ma | 马小巾
 SEOTitle: Xiaojin Ma Personal Website
-header-img: img/pic1.jpg
+header-img: img/arthill.jpg
 email: xiaojinma_AT_wustl.edu
 description: ""
 keyword: "Xiaojin Ma, cognitive psychology, visual attention, xiaojinma"
@@ -94,21 +94,4 @@ featured-condition-size: 1              # 相同标签数量大于这个数，�
 chrome-tab-theme-color: "#000000"
 service-worker: true
 
-
-
-# Friends
-friends: [
-    {
-        title: "",
-        href: ""
-    },{
-        title: "",
-        href: ""
-    },{
-        title: "",
-        href: ""
-    },{
-        title: "",
-        href: ""
-    }
 ]
