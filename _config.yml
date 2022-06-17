@@ -1,11 +1,12 @@
 # Site settings
 title: Xiaojin Ma | 马小巾
-SEOTitle: Xiaojin Ma Personal Website
+SEOTitle: Xiaojin Ma | Personal Website
 header-img: img/arthill1.jpg
 email: xiaojinma_AT_wustl.edu
 description: ""
 keyword: "Xiaojin Ma, cognitive psychology, visual attention, xiaojinma"
 url: "http://xiaojin-ma.github.io"          # your host, for absolute URL
+sidebar-about-description: "Department of Psychological and Brain Sciences<br/>Washington University in St. Louis<br/>"
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 #github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code repository
 
