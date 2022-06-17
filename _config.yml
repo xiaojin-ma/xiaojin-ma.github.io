@@ -94,4 +94,16 @@ featured-condition-size: 1              # 相同标签数量大于这个数，�
 chrome-tab-theme-color: "#000000"
 service-worker: true
 
+
+friends: [
+    {
+        title: "ResearchGate",
+        href: "https://www.researchgate.net/profile/Xiaojin-Ma-2"
+    },{
+        title: "ORCID",
+        href: "https://orcid.org/0000-0003-4592-6408"
+    },{
+        title: "Google Scholar",
+        href: "https://scholar.google.com/citations?user=7RSpO8IAAAAJ&hl=en"
+    }
 ]
