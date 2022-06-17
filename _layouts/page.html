@@ -32,7 +32,19 @@ layout: default
                 col-md-10 col-md-offset-1
                 sidebar-container">
 
-             
+                <!-- Featured Tags -->
+                {% if site.featured-tags %}
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="{{'/2-tags/' | prepend: site.baseurl }}">FEATURED TAGS</a></h5>
+                    <div class="tags">
+        				{% for tag in site.tags %}
+                            {% if tag[1].size > {{site.featured-condition-size}} %}
+                				<a href="{{ site.baseurl }}/2-tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
+                                    {{ tag[0] }}
+                                </a>
+                            {% endif %}
+        				{% endfor %}
         			</div>
                 </section>
                 {% endif %}
@@ -40,7 +52,7 @@ layout: default
                 <!-- Friends Blog -->
                 {% if site.friends %}
                 <hr>
-                <h5>OTHER SITES</h5>
+                <h5>MORE SITES</h5>
                 <ul class="list-inline">
                     {% for friend in site.friends %}
                         <li><a href="{{friend.href}}">{{friend.title}}</a></li>
@@ -69,14 +81,29 @@ layout: default
                 col-xs-12
                 sidebar-container
             ">
-               
+                <!-- Featured Tags -->
+                {% if site.featured-tags %}
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="{{'/2-tags/' | prepend: site.baseurl }}">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        {% for tag in site.tags %}
+                            {% if tag[1].size > {{site.featured-condition-size}} %}
+                                <a href="{{ site.baseurl }}/2-tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
+                                    {{ tag[0] }}
+                                </a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </section>
+                {% endif %}
 
                 <!-- Short About -->
                 <section class="visible-md visible-lg">
-                    <hr><h5><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
+                    <hr><h5><a href="{{'/3-about/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
                     <div class="short-about">
                         {% if site.sidebar-avatar %}
-                            <a href="{{ site.baseurl }}/about">
+                            <a href="{{ site.baseurl }}/3-about">
                                 <img src="{{site.sidebar-avatar}}"/>
                             </a>
                         {% endif %}
@@ -166,7 +193,7 @@ layout: default
                 <!-- Friends Blog -->
                 {% if site.friends %}
                 <hr>
-                <h5>OTHER SITES</h5>
+                <h5>MORE SITES</h5>
                 <ul class="list-inline">
                     {% for friend in site.friends %}
                         <li><a href="{{friend.href}}">{{friend.title}}</a></li>
