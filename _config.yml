@@ -2,7 +2,7 @@
 title: Xiaojin Ma | 马小巾
 SEOTitle: Xiaojin Ma | Personal Website
 header-img: img/arthill1.jpg
-email: <a href="mailto:xiaojinma@wustl.edu" target="_blank">xiaojinma_AT_wustl.edu</a>
+email: <a href="mailto:xiaojinma@wustl.edu" target="_blank">xiaojinma[at]wustl.edu</a>
 description: ""
 keyword: "Xiaojin Ma, cognitive psychology, visual attention, xiaojinma"
 url: "http://xiaojin-ma.github.io"          # your host, for absolute URL
@@ -97,13 +97,17 @@ service-worker: true
 
 friends: [
     {
+        title: "Google Scholar",
+        href: "https://scholar.google.com/citations?user=7RSpO8IAAAAJ&hl=en"
+    },{
         title: "ResearchGate",
         href: "https://www.researchgate.net/profile/Xiaojin-Ma-2"
     },{
+        title: "Twitter",
+        href: "https://twitter.com/XiaojinMa"
+    },{
         title: "ORCID",
         href: "https://orcid.org/0000-0003-4592-6408"
-    },{
-        title: "Google Scholar",
-        href: "https://scholar.google.com/citations?user=7RSpO8IAAAAJ&hl=en"
+    }
     }
 ]
