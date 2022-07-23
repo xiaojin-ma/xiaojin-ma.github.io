@@ -2,7 +2,7 @@
 title: Xiaojin Ma | 马小巾
 SEOTitle: Xiaojin Ma | Personal Website
 header-img: img/arthill1.jpg
-email: <a href="mailto:xiaojinma@wustl.edu" target="_blank">xiaojinma_AT_wustl.edu</a>
+email: <a href="mailto:xiaojinma@wustl.edu" target="_blank">xiaojinma@wustl.edu</a>
 description: ""
 keyword: "Xiaojin Ma, cognitive psychology, visual attention, xiaojinma"
 url: "http://xiaojin-ma.github.io"          # your host, for absolute URL
@@ -11,7 +11,7 @@ baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Department of Psychological and Brain Sciences<br/>Washington University in St. Louis<br/>"
+sidebar-about-description: <a href="https://psych.wustl.edu/" target="_blank">Department of Psychological and Brain Sciences</a><br/><a href="https://wustl.edu/" target="_blank">Washington University in St. Louis</a><br/>
 sidebar-avatar: /img/avatar2.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
