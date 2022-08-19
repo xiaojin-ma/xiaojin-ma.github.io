@@ -36,8 +36,6 @@ chrome-tab-theme-color: "#000000"
 service-worker: true
 
 
-friends: [
+friends: 
 <a href="https://scholar.google.com/citations?user=7RSpO8IAAAAJ&hl=en"><img src="img/scholar.png" width="30" height="30"></a>
 <a href="https://twitter.com/XiaojinMa" title="Twitter"><img src="img/twitter.png" width="30" height="30"></a>
-
-]
