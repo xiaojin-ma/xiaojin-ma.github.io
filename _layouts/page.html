@@ -81,9 +81,17 @@ layout: default
                         {% if site.email %}
                             <p>✉️ {{site.email}}</p>
                         {% endif %}
-			{% if site.links %}
-                            <p>{{site.links}}</p>
-                        {% endif %}
+                </section>
+                {% endif %}
+
+                <!-- Links -->
+                {% if site.links %}
+                <hr>
+                {% if site.links %}
+                	<p>{{site.links}}</p>
+                {% endif %}
+                </ul>
+                {% endif %}
                     </div>
                 </section>
         {% endif %}
