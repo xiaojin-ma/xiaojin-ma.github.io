@@ -135,10 +135,9 @@ layout: default
                 {% if site.friends %}
                 <hr>
                 <h5>OTHER SITES</h5>
-                <ul class="list-inline">
-                    {% for friend in site.friends %}
-                        <li><a href="{{friend.href}}">{{friend.title}}</a></li>
-                    {% endfor %}
+                	{% if site.friends %}
+                            <p>{{site.friends}}</p>
+                        {% endif %}
                 </ul>
                 {% endif %}
             </div>
