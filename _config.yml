@@ -36,7 +36,4 @@ chrome-tab-theme-color: "#000000"
 service-worker: true
 
 
-friends: <a href="https://scholar.google.com/citations?user=7RSpO8IAAAAJ&hl=en"><img src="img/scholar.png" width="30" height="30"></a>
-<a href="https://twitter.com/XiaojinMa" title="Twitter"><img src="img/twitter.png" width="30" height="30"></a>
-<a href="https://www.researchgate.net/profile/Xiaojin-Ma-2" title="ResearchGate"><img src="img/researchgate.png" width="30" height="30"></a>
-<a href="https://orcid.org/0000-0003-4592-6408" title="ORCID"><img src="img/ORCID.png" width="30" height="30"></a>
+friends: <a href="https://scholar.google.com/citations?user=7RSpO8IAAAAJ&hl=en"><img src="img/scholar.png" width="30" height="30"></a><a href="https://twitter.com/XiaojinMa" title="Twitter"><img src="img/twitter.png" width="30" height="30"></a><a href="https://www.researchgate.net/profile/Xiaojin-Ma-2" title="ResearchGate"><img src="img/researchgate.png" width="30" height="30"></a><a href="https://orcid.org/0000-0003-4592-6408" title="ORCID"><img src="img/ORCID.png" width="30" height="30"></a>
