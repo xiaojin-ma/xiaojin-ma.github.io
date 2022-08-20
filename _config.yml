@@ -11,7 +11,7 @@ baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: Hi, I'm Jin <br/>你好，我是马小巾<br/>
+sidebar-about-description: Hi, I'm Jin <br/>你好，我叫马小巾<br/>
 sidebar-avatar: /img/avatar2.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 links: <input type="image" src="img/scholar.png" width="30" height="30" onclick="location.href='https://scholar.google.com/citations?user=7RSpO8IAAAAJ&hl=en'" /> <input type="image" src='img/twitter.png' width="30" height="30" onclick="location.href='https://twitter.com/XiaojinMa'"> <input type="image" src='img/researchgate.png' width="30" height="30" onclick="location.href='https://www.researchgate.net/profile/Xiaojin-Ma-2'"> <input type="image" src='img/linkedin.png' width="30" height="30" onclick="location.href='https://www.linkedin.com/in/xiaojin-ma-b25456bb/'"> <input type="image" src='img/ORCID.png' width="30" height="30" onclick="location.href='https://orcid.org/0000-0003-4592-6408'">
 # 统计
