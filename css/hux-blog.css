@@ -428,7 +428,7 @@ pre code {
     font-size: 20px;
   }
   .navbar-custom .navbar-brand {
-    color: white;
+    color: black;
     padding: 20px;
     line-height: 20px;
   }
@@ -437,7 +437,7 @@ pre code {
     color: rgba(255, 255, 255, 0.8);
   }
   .navbar-custom .nav li a {
-    color: white;
+    color: black;
     padding: 20px;
   }
   .navbar-custom .nav li a:hover,
@@ -990,7 +990,7 @@ img::-moz-selection {
 }
 /* Hux customize Style for navBar button */
 .navbar-default .navbar-toggle {
-  border-color: transparent;
+  border-color: black;
   padding: 19px 16px;
   margin-top: 2px;
   margin-right: 2px;
