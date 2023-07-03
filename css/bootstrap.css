@@ -4188,9 +4188,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-image: none;
   border: 1px solid #000;
   border-radius: 4px;
+  color: #9933CC!important;
 }
 .navbar-toggle:focus {
   outline: 0;
+  color: #ff4444;
 }
 .navbar-toggle .icon-bar {
   display: block;
