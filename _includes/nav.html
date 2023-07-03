@@ -20,7 +20,7 @@
                         <a href="{{ site.baseurl }}/"><font style="color:black;">Home</font></a>
                     </li>
                     {% for page in site.pages %}{% if page.title %}
-                    <li style="font-size:30px">
+                    <li style="color:black;font-size:30px">
                         <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                     </li>
                     {% endif %}{% endfor %}
