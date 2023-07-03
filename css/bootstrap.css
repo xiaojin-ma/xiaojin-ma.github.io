@@ -3421,7 +3421,7 @@ tbody.collapse.in {
   font-size: 14px;
   text-align: left;
   list-style: none;
-  background-color: #fff;
+  background-color: #000;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
   border: 1px solid #ccc;
@@ -3472,7 +3472,7 @@ tbody.collapse.in {
 .dropdown-menu > .disabled > a:focus {
   text-decoration: none;
   cursor: not-allowed;
-  background-color: transparent;
+  background-color: #000;
   background-image: none;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
