@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Research by Xiaojin Ma on visual attention, cognitive control, distractor suppression, and working memory.">
+  <title>Research | Xiaojin Ma</title>
+  <style>
+    :root {
+      --text: #222;
+      --muted: #666;
+      --accent: #1676b8;
+      --line: #e5e7eb;
+      --panel: #f8fafc;
+      --max-width: 980px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .page {
+      width: min(var(--max-width), calc(100% - 40px));
+      margin: 0 auto;
+      padding: 48px 0 72px;
+    }
+
+    .top-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      font-size: 0.95rem;
+    }
+
+    h1 {
+      margin: 0 0 20px;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+
+    .intro {
+      max-width: 850px;
+      margin-bottom: 48px;
+      font-size: 1.08rem;
+    }
+
+    .research-section {
+      padding: 38px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .research-section h2 {
+      margin: 0 0 16px;
+      font-size: 1.55rem;
+      line-height: 1.25;
+    }
+
+    .research-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.95fr);
+      gap: 34px;
+      align-items: start;
+    }
+
+    .research-grid.reverse {
+      grid-template-columns: minmax(300px, 0.95fr) minmax(0, 1.05fr);
+    }
+
+    .research-grid.reverse .figure { order: 1; }
+    .research-grid.reverse .copy { order: 2; }
+
+    .copy p { margin: 0; }
+
+    figure {
+      margin: 0;
+      padding: 0;
+    }
+
+    .figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    figcaption {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.45;
+    }
+
+    .text-only {
+      max-width: 850px;
+    }
+
+    .citation {
+      white-space: normal;
+    }
+
+
+    .related-publications {
+      margin-top: 24px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+
+    .related-publications h3 {
+      margin: 0 0 10px;
+      font-size: 1rem;
+      font-weight: 650;
+    }
+
+    .related-publications ul {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+
+    .related-publications li {
+      margin: 7px 0;
+      color: #333;
+      font-size: 0.94rem;
+      line-height: 1.5;
+    }
+
+    .pub-status {
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    @media (max-width: 760px) {
+      .page {
+        width: min(100% - 28px, var(--max-width));
+        padding-top: 30px;
+      }
+
+      .research-grid,
+      .research-grid.reverse {
+        grid-template-columns: 1fr;
+      }
+
+      .research-grid.reverse .figure,
+      .research-grid.reverse .copy {
+        order: initial;
+      }
+
+      .research-section {
+        padding: 30px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a class="top-link" href="index.html">← Home</a>
+
+    <h1>Research</h1>
+
+    <div class="intro">
+      My research focuses on visual attention, perception, and cognitive control. In today’s information-rich world, attention must act as a gatekeeper, yet overloaded stimulation and ubiquitous distraction make this role especially difficult. A long-standing debate asks whether attention is inevitably captured by salient events or can be strategically suppressed. My work tackles this question, showing with psychophysics, eye-tracking, event-related potentials (ERPs), and multivariate EEG decoding methods how the brain flexibly resists distraction and achieves control. This line of inquiry not only advances fundamental theoretical understanding of attentional control, but also holds promising applications in areas such as computer vision, human factors engineering, autonomous driving, and public safety.
+    </div>
+
+    <section class="research-section">
+      <h2>Attentional Suppression of Distracting Stimuli</h2>
+      <div class="research-grid">
+        <div class="copy">
+          <p>
+            An important question in distractor suppression is where its limits lie. Initial theories of suppression suggested that only distractors with known colors or spatial locations can be ignored, implying that the brain’s ability to filter distractors relies on foreknowledge of their features. Yet this leads to a conundrum: in everyday life, we often must resist distractions that are entirely new or unpredictable. This observation led me to ask whether suppression can operate not on specific features, but on higher-order salience contrast—the degree to which something stands out in its background. To address this, I developed a new paradigm to encourage salience-based suppression (also called <em>second-order suppression</em>; Ma &amp; Abrams, 2023a, <em>J Exp Psychol Hum Percept Perform</em>; 2023b, <em>Atten Percept Psychophys</em>). Using this approach, I demonstrated for the first time that people can ignore salient distractors without knowing their features or locations. These findings highlight the flexibility of the visual system and its capacity to adaptively filter unpredictable information in complex environments.
+          </p>
+        </div>
+
+        <figure class="figure">
+          <img src="assets/img/salience-suppression.png" alt="Illustration of salient distraction and a second-order salience computation model of distractor suppression.">
+          <figcaption>
+            Salient events can strongly attract attention. My work shows that unpredictable salient distractors can nevertheless be suppressed based on higher-order salience contrast.
+          </figcaption>
+        </figure>
+      </div>
+      <div class="related-publications">
+        <h3>Related publications</h3>
+        <ul>
+          <li>Ma, X., &amp; Abrams, R. A. (2023). <a href="https://doi.org/10.1037/xhp0001067" target="_blank" rel="noopener">Ignoring the unknown: Attentional suppression of unpredictable visual distraction</a>. <em>Journal of Experimental Psychology: Human Perception and Performance, 49</em>(1), 1–6.</li>
+          <li>Ma, X., &amp; Abrams, R. A. (2023). <a href="https://doi.org/10.3758/s13414-023-02712-6" target="_blank" rel="noopener">Feature-blind attentional suppression of salient distractors</a>. <em>Attention, Perception, &amp; Psychophysics, 85</em>(5), 1409–1424.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="research-section">
+      <h2>Strategic Control of Attention to Prevent Distraction</h2>
+      <div class="text-only">
+        <p>
+          I investigated how the breadth of attentional focus (also called the <em>attentional window</em>) influences susceptibility to distraction. Some theorists argued that capture depends on an object’s relation to the attentional window—inside captures, outside is ignored (Theeuwes, 2023). However, I find this framework dismisses the role of active control. To disentangle attentional spread and distractibility, I collaborated with Dr. Steven J. Luck at UC Davis and invented a novel task that measured ERP indices of capture (the N2pc component) for salient distractors positioned inside or outside the attentional window (Ma, Luck, &amp; Gaspelin, 2026, <em>J Cog Neuro</em>; Ma &amp; Abrams, 2026, <em>Atten Percept Psychophys</em>; Ma &amp; Gaspelin, in prep). The results refuted the view that capture is passively due to attentional enclosure. These works suggest that active attentional control can override passive odds of distractibility.
+        </p>
+      </div>
+      <div class="related-publications">
+        <h3>Related publications</h3>
+        <ul>
+          <li>Ma, X., Luck, S. J., &amp; Gaspelin, N. (2026). <a href="https://doi.org/10.1162/jocn.a.105" target="_blank" rel="noopener">Ignoring salient distractors inside and outside the attentional window</a>. <em>Journal of Cognitive Neuroscience, 38</em>(2), 242–263.</li>
+          <li>Ma, X., &amp; Abrams, R. A. (2026). <a href="https://doi.org/10.3758/s13414-026-03317-5" target="_blank" rel="noopener">Distractor avoidance is achieved by active control rather than passive exclusion</a>. <em>Attention, Perception, &amp; Psychophysics, 88</em>, 173.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="research-section">
+      <h2>Secondary Filtering of Distractors during Working Memory Encoding</h2>
+      <div class="research-grid reverse">
+        <figure class="figure">
+          <img src="assets/img/wm-filtering.png" alt="EEG decoding result and schematic of two-stage filtering at attentional selection and working-memory encoding.">
+          <figcaption>
+            Multivariate EEG decoding revealed a second line of defense against distraction: distractors that capture attention can still be gated from working memory.
+          </figcaption>
+        </figure>
+
+        <div class="copy">
+          <p>
+            Although the visual system can filter distractors during attentional selection, this mechanism sometimes fails. Does an incidentally selected distractor then automatically enter subsequent processing? In collaboration with Dr. Edward Awh at the University of Chicago, I applied multivariate EEG decoding to probe neural processes beyond traditional ERP measures and discovered a secondary filtering mechanism at working memory encoding (Ma, Jones, Awh, &amp; Gaspelin, in prep). I presented salient distractors that reliably captured attention and asked whether this erroneous selection increased working memory load. Using inverted encoding modeling, I first confirmed that attention indeed selected the distractor. Critically, subsequent multivariate decoding showed that working memory representations nevertheless contained only task-relevant information and were not inflated by distractor capture. These findings reveal a second line of defense against distraction: when attentional filtering fails, a secondary gating mechanism prevents distracting information from entering working memory.
+          </p>
+        </div>
+      </div>
+      <div class="related-publications">
+        <h3>Related publication</h3>
+        <ul>
+          <li>Ma, X., Jones, A., Awh, E., &amp; Gaspelin, N. <span class="pub-status">Manuscript in preparation.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="research-section">
+      <h2>Improving Metrics of Attentional Allocation</h2>
+      <div class="text-only">
+        <p>
+          The magnitude of distractor inhibition can be assessed through various methods. While eye-tracking and ERP components provide unbiased measures of capture and suppression, behavioral measures often rely on participant self-report and have faced questions about objectivity. To address this, I developed a novel technique that provided objective measures, while remaining purely behavioral and avoiding the technical demands of specialized equipment (Ma &amp; Abrams, 2025, <em>Cognition</em>). Through this project, I developed novel tools that expand the methodological approaches available to attention researchers.
+        </p>
+      </div>
+      <div class="related-publications">
+        <h3>Related publication</h3>
+        <ul>
+          <li>Ma, X., &amp; Abrams, R. A. (2025). <a href="https://doi.org/10.1016/j.cognition.2024.106007" target="_blank" rel="noopener">Bias-free measure of distractor avoidance in visual search</a>. <em>Cognition, 254</em>, 106007.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
