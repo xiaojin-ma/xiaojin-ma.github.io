@@ -81,19 +81,49 @@ header-img: "img/research_pound.png"
     }
 
 
-    .research-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.95fr);
-      gap: 34px;
-      align-items: start;
-    }
-
+    .research-grid,
     .research-grid.reverse {
-      grid-template-columns: minmax(300px, 0.95fr) minmax(0, 1.05fr);
+      display: block;
+      position: relative;
     }
 
-    .research-grid.reverse .figure { order: 1; }
-    .research-grid.reverse .copy { order: 2; }
+    .copy,
+    .text-only {
+      max-width: 100%;
+    }
+
+    .margin-figure {
+      margin: 28px auto 0;
+      width: min(100%, 680px);
+    }
+
+    .margin-figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    @media (min-width: 1450px) {
+      .research-section {
+        position: relative;
+      }
+
+      .margin-figure {
+        position: absolute;
+        top: 92px;
+        width: 430px;
+        margin: 0;
+      }
+
+      .margin-figure.right {
+        left: calc(100% + 42px);
+      }
+
+      .margin-figure.left {
+        right: calc(100% + 42px);
+      }
+    }
 
     .copy p,
     .text-only p {
@@ -104,13 +134,6 @@ header-img: "img/research_pound.png"
     figure {
       margin: 0;
       padding: 0;
-    }
-
-    .figure img {
-      display: block;
-      width: 100%;
-      height: auto;
-      object-fit: contain;
     }
 
     .text-only {
@@ -166,16 +189,6 @@ header-img: "img/research_pound.png"
         padding-top: 30px;
       }
 
-      .research-grid,
-      .research-grid.reverse {
-        grid-template-columns: 1fr;
-      }
-
-      .research-grid.reverse .figure,
-      .research-grid.reverse .copy {
-        order: initial;
-      }
-
       .research-section {
         padding: 30px 0;
       }
@@ -199,7 +212,7 @@ header-img: "img/research_pound.png"
           </p>
         </div>
 
-        <figure class="figure">
+        <figure class="margin-figure right">
           <img src="assets/img/salience-suppression.png" alt="Illustration of salient distraction and a second-order salience computation model of distractor suppression.">
         </figure>
       </div>
@@ -232,7 +245,7 @@ header-img: "img/research_pound.png"
     <section class="research-section section-red">
       <h2>Secondary Filtering of Distractors during Working Memory Encoding</h2>
       <div class="research-grid reverse">
-        <figure class="figure">
+        <figure class="margin-figure left">
           <img src="assets/img/wm-filtering.png" alt="EEG decoding result and schematic of two-stage filtering at attentional selection and working-memory encoding.">
         </figure>
 
