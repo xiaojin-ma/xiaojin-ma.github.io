@@ -41,12 +41,6 @@ header-img: "img/research_pound.png"
       padding: 48px 0 72px;
     }
 
-    .top-link {
-      display: inline-block;
-      margin-bottom: 24px;
-      font-size: 0.95rem;
-    }
-
     h1 {
       margin: 0 0 20px;
       font-size: clamp(2rem, 4vw, 2.8rem);
@@ -57,7 +51,7 @@ header-img: "img/research_pound.png"
     .intro {
       max-width: 850px;
       margin-bottom: 48px;
-      font-size: 1.08rem;
+      font-size: 1.14rem;
     }
 
     .research-section {
@@ -66,10 +60,17 @@ header-img: "img/research_pound.png"
     }
 
     .research-section h2 {
-      margin: 0 0 16px;
-      font-size: 1.55rem;
-      line-height: 1.25;
+      margin: 0 0 18px;
+      font-size: clamp(1.82rem, 2.6vw, 2.08rem);
+      line-height: 1.2;
+      color: var(--section-color);
     }
+
+    .research-section.section-blue   { --section-color: #173f5f; }
+    .research-section.section-green  { --section-color: #285943; }
+    .research-section.section-red    { --section-color: #7a2e2e; }
+    .research-section.section-purple { --section-color: #4f3b67; }
+    .research-section.section-teal   { --section-color: #2f5d62; }
 
     .research-grid {
       display: grid;
@@ -85,7 +86,11 @@ header-img: "img/research_pound.png"
     .research-grid.reverse .figure { order: 1; }
     .research-grid.reverse .copy { order: 2; }
 
-    .copy p { margin: 0; }
+    .copy p,
+    .text-only p {
+      margin: 0;
+      font-size: 1.14rem;
+    }
 
     figure {
       margin: 0;
@@ -116,15 +121,15 @@ header-img: "img/research_pound.png"
 
 
     .related-publications {
-      margin-top: 24px;
-      padding-top: 18px;
-      border-top: 1px solid var(--line);
+      margin-top: 26px;
+      padding-top: 0;
     }
 
     .related-publications h3 {
       margin: 0 0 10px;
-      font-size: 1rem;
-      font-weight: 650;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--section-color);
     }
 
     .related-publications ul {
@@ -137,6 +142,15 @@ header-img: "img/research_pound.png"
       color: #333;
       font-size: 0.94rem;
       line-height: 1.5;
+    }
+
+    .research-section .related-publications a {
+      color: var(--section-color);
+    }
+
+    .figure-slot {
+      min-height: 340px;
+      margin: 28px 0 12px;
     }
 
     .pub-status {
@@ -168,15 +182,13 @@ header-img: "img/research_pound.png"
 </head>
 <body>
   <main class="page">
-    <a class="top-link" href="index.html">← Home</a>
-
     <h1>Research</h1>
 
     <div class="intro">
       My research focuses on visual attention, perception, and cognitive control. In today’s information-rich world, attention must act as a gatekeeper, yet overloaded stimulation and ubiquitous distraction make this role especially difficult. A long-standing debate asks whether attention is inevitably captured by salient events or can be strategically suppressed. My work tackles this question, showing with psychophysics, eye-tracking, event-related potentials (ERPs), and multivariate EEG decoding methods how the brain flexibly resists distraction and achieves control. This line of inquiry not only advances fundamental theoretical understanding of attentional control, but also holds promising applications in areas such as computer vision, human factors engineering, autonomous driving, and public safety.
     </div>
 
-    <section class="research-section">
+    <section class="research-section section-blue">
       <h2>Attentional Suppression of Distracting Stimuli</h2>
       <div class="research-grid">
         <div class="copy">
@@ -197,11 +209,12 @@ header-img: "img/research_pound.png"
         <ul>
           <li>Ma, X., &amp; Abrams, R. A. (2023). <a href="https://doi.org/10.1037/xhp0001067" target="_blank" rel="noopener">Ignoring the unknown: Attentional suppression of unpredictable visual distraction</a>. <em>Journal of Experimental Psychology: Human Perception and Performance, 49</em>(1), 1–6.</li>
           <li>Ma, X., &amp; Abrams, R. A. (2023). <a href="https://doi.org/10.3758/s13414-023-02712-6" target="_blank" rel="noopener">Feature-blind attentional suppression of salient distractors</a>. <em>Attention, Perception, &amp; Psychophysics, 85</em>(5), 1409–1424.</li>
+          <li><strong>Ma, X.</strong><sup>*</sup>, &amp; Abrams, R. A. (2023). <a href="https://doi.org/10.1177/09567976231201853" target="_blank" rel="noopener">Visual distraction’s “silver lining”: Distractor suppression boosts attention to competing stimuli</a>. <em>Psychological Science, 34</em>(12), 1336–1349.</li>
         </ul>
       </div>
     </section>
 
-    <section class="research-section">
+    <section class="research-section section-green">
       <h2>Strategic Control of Attention to Prevent Distraction</h2>
       <div class="text-only">
         <p>
@@ -217,7 +230,7 @@ header-img: "img/research_pound.png"
       </div>
     </section>
 
-    <section class="research-section">
+    <section class="research-section section-red">
       <h2>Secondary Filtering of Distractors during Working Memory Encoding</h2>
       <div class="research-grid reverse">
         <figure class="figure">
@@ -241,7 +254,7 @@ header-img: "img/research_pound.png"
       </div>
     </section>
 
-    <section class="research-section">
+    <section class="research-section section-purple">
       <h2>Improving Metrics of Attentional Allocation</h2>
       <div class="text-only">
         <p>
@@ -255,6 +268,26 @@ header-img: "img/research_pound.png"
         </ul>
       </div>
     </section>
+
+    <section class="research-section section-teal">
+      <h2>Theoretical Review of Attentional Capture and Suppression</h2>
+      <div class="text-only">
+        <p>
+          In addition to empirical work, I contribute to theoretical synthesis on attentional capture and suppression. Our recent review, <em>Signal Suppression 2.0</em>, integrates a decade of findings and updates the signal suppression account to provide a broader framework for understanding how attentional control prevents distraction.
+        </p>
+      </div>
+
+      <!-- Large space reserved for literature-review figure(s). Add your image(s) here later. -->
+      <div class="figure-slot"></div>
+
+      <div class="related-publications">
+        <h3>Related publication</h3>
+        <ul>
+          <li>Gaspelin, N.<sup>*</sup>, <strong>Ma, X.</strong>, &amp; Luck, S. J. (2025). <a href="https://doi.org/10.3758/s13423-025-02736-z" target="_blank" rel="noopener">Signal Suppression 2.0: An updated account of attentional capture and suppression</a>. <em>Psychonomic Bulletin &amp; Review, 32</em>, 2648–2668.</li>
+        </ul>
+      </div>
+    </section>
+
   </main>
 </body>
 </html>
