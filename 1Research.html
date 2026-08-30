@@ -43,7 +43,7 @@ header-img: "img/research_pound.png"
 
     h1 {
       margin: 0 0 20px;
-      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-size: clamp(3rem, 5vw, 4rem);
       line-height: 1.15;
       letter-spacing: -0.02em;
     }
@@ -51,7 +51,7 @@ header-img: "img/research_pound.png"
     .intro {
       max-width: 850px;
       margin-bottom: 48px;
-      font-size: 1.14rem;
+      font-size: 2.28rem;
     }
 
     .research-section {
@@ -61,7 +61,7 @@ header-img: "img/research_pound.png"
 
     .research-section h2 {
       margin: 0 0 18px;
-      font-size: clamp(1.82rem, 2.6vw, 2.08rem);
+      font-size: clamp(2.6rem, 3.8vw, 3.2rem);
       line-height: 1.2;
       color: var(--section-color);
     }
@@ -71,6 +71,15 @@ header-img: "img/research_pound.png"
     .research-section.section-red    { --section-color: #7a2e2e; }
     .research-section.section-purple { --section-color: #4f3b67; }
     .research-section.section-teal   { --section-color: #2f5d62; }
+    .research-section,
+    .research-section .copy p,
+    .research-section .text-only p,
+    .research-section .related-publications h3,
+    .research-section .related-publications li,
+    .research-section .pub-status {
+      color: var(--section-color);
+    }
+
 
     .research-grid {
       display: grid;
@@ -89,7 +98,7 @@ header-img: "img/research_pound.png"
     .copy p,
     .text-only p {
       margin: 0;
-      font-size: 1.14rem;
+      font-size: 2.28rem;
     }
 
     figure {
@@ -102,13 +111,6 @@ header-img: "img/research_pound.png"
       width: 100%;
       height: auto;
       object-fit: contain;
-    }
-
-    figcaption {
-      margin-top: 10px;
-      color: var(--muted);
-      font-size: 0.88rem;
-      line-height: 1.45;
     }
 
     .text-only {
@@ -127,7 +129,7 @@ header-img: "img/research_pound.png"
 
     .related-publications h3 {
       margin: 0 0 10px;
-      font-size: 1.05rem;
+      font-size: 1.9rem;
       font-weight: 700;
       color: var(--section-color);
     }
@@ -140,7 +142,7 @@ header-img: "img/research_pound.png"
     .related-publications li {
       margin: 7px 0;
       color: #333;
-      font-size: 0.94rem;
+      font-size: 1.65rem;
       line-height: 1.5;
     }
 
@@ -199,9 +201,6 @@ header-img: "img/research_pound.png"
 
         <figure class="figure">
           <img src="assets/img/salience-suppression.png" alt="Illustration of salient distraction and a second-order salience computation model of distractor suppression.">
-          <figcaption>
-            Salient events can strongly attract attention. My work shows that unpredictable salient distractors can nevertheless be suppressed based on higher-order salience contrast.
-          </figcaption>
         </figure>
       </div>
       <div class="related-publications">
@@ -224,8 +223,8 @@ header-img: "img/research_pound.png"
       <div class="related-publications">
         <h3>Related publications</h3>
         <ul>
-          <li><strong>Ma, X.</strong>strong>, Luck, S. J., &amp; Gaspelin, N. (2026). <a href="https://doi.org/10.1162/jocn.a.105" target="_blank" rel="noopener">Ignoring salient distractors inside and outside the attentional window</a>. <em>Journal of Cognitive Neuroscience, 38</em>(2), 242–263.</li>
-          <li><strong>Ma, X.</strong>strong>, &amp; Abrams, R. A. (2026). <a href="https://doi.org/10.3758/s13414-026-03317-5" target="_blank" rel="noopener">Distractor avoidance is achieved by active control rather than passive exclusion</a>. <em>Attention, Perception, &amp; Psychophysics, 88</em>, 173.</li>
+          <li><strong>Ma, X.</strong>, Luck, S. J., &amp; Gaspelin, N. (2026). <a href="https://doi.org/10.1162/jocn.a.105" target="_blank" rel="noopener">Ignoring salient distractors inside and outside the attentional window</a>. <em>Journal of Cognitive Neuroscience, 38</em>(2), 242–263.</li>
+          <li><strong>Ma, X.</strong>, &amp; Abrams, R. A. (2026). <a href="https://doi.org/10.3758/s13414-026-03317-5" target="_blank" rel="noopener">Distractor avoidance is achieved by active control rather than passive exclusion</a>. <em>Attention, Perception, &amp; Psychophysics, 88</em>, 173.</li>
         </ul>
       </div>
     </section>
@@ -235,9 +234,6 @@ header-img: "img/research_pound.png"
       <div class="research-grid reverse">
         <figure class="figure">
           <img src="assets/img/wm-filtering.png" alt="EEG decoding result and schematic of two-stage filtering at attentional selection and working-memory encoding.">
-          <figcaption>
-            Multivariate EEG decoding revealed a second line of defense against distraction: distractors that capture attention can still be gated from working memory.
-          </figcaption>
         </figure>
 
         <div class="copy">
@@ -249,7 +245,7 @@ header-img: "img/research_pound.png"
       <div class="related-publications">
         <h3>Related publication</h3>
         <ul>
-          <li><strong>Ma, X.</strong>strong>, Jones, A., Awh, E., &amp; Gaspelin, N. <span class="pub-status">Manuscript in preparation.</span></li>
+          <li><strong>Ma, X.</strong>, Jones, A., Awh, E., &amp; Gaspelin, N. <span class="pub-status">Manuscript in preparation.</span></li>
         </ul>
       </div>
     </section>
@@ -264,7 +260,7 @@ header-img: "img/research_pound.png"
       <div class="related-publications">
         <h3>Related publication</h3>
         <ul>
-          <li><strong>Ma, X.</strong>strong>, &amp; Abrams, R. A. (2025). <a href="https://doi.org/10.1016/j.cognition.2024.106007" target="_blank" rel="noopener">Bias-free measure of distractor avoidance in visual search</a>. <em>Cognition, 254</em>, 106007.</li>
+          <li><strong>Ma, X.</strong>, &amp; Abrams, R. A. (2025). <a href="https://doi.org/10.1016/j.cognition.2024.106007" target="_blank" rel="noopener">Bias-free measure of distractor avoidance in visual search</a>. <em>Cognition, 254</em>, 106007.</li>
         </ul>
       </div>
     </section>
