@@ -104,6 +104,20 @@ header-img: "img/research_pound.png"
       object-fit: contain;
     }
 
+    .intro-figure {
+      width: 100%;
+      max-width: 850px;
+      margin: 0 0 48px;
+    }
+
+    .intro-figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+
     @media (min-width: 1450px) {
       .research-section {
         position: relative;
@@ -203,6 +217,10 @@ header-img: "img/research_pound.png"
       My research focuses on visual attention, perception, and cognitive control. In today’s information-rich world, attention must act as a gatekeeper, yet overloaded stimulation and ubiquitous distraction make this role especially difficult. A long-standing debate asks whether attention is inevitably captured by salient events or can be strategically suppressed. My work tackles this question, showing with psychophysics, eye-tracking, event-related potentials (ERPs), and multivariate EEG decoding methods how the brain flexibly resists distraction and achieves control. This line of inquiry not only advances fundamental theoretical understanding of attentional control, but also holds promising applications in areas such as computer vision, human factors engineering, autonomous driving, and public safety.
     </div>
 
+    <figure class="intro-figure">
+      <img src="img/salient_dis_example.png" alt="Example of salient visual distraction.">
+    </figure>
+
     <section class="research-section section-blue">
       <h2>Attentional Suppression of Distracting Stimuli</h2>
       <div class="research-grid">
@@ -213,7 +231,7 @@ header-img: "img/research_pound.png"
         </div>
 
         <figure class="margin-figure right">
-          <img src="assets/img/salience-suppression.png" alt="Illustration of salient distraction and a second-order salience computation model of distractor suppression.">
+          <img src="img/second-order supp.png" alt="Second-order distractor suppression illustration.">
         </figure>
       </div>
       <div class="related-publications">
@@ -245,7 +263,7 @@ header-img: "img/research_pound.png"
     <section class="research-section section-red">
       <h2>Secondary Filtering of Distractors during Working Memory Encoding</h2>
       <div class="research-grid reverse">
-        <figure class="margin-figure left">
+        <figure class="margin-figure right">
           <img src="assets/img/wm-filtering.png" alt="EEG decoding result and schematic of two-stage filtering at attentional selection and working-memory encoding.">
         </figure>
 
