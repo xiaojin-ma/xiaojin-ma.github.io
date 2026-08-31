@@ -215,6 +215,57 @@ header-img: "img/research_pound.png"
       font-style: italic;
     }
 
+
+    .toc-panel {
+      display: none;
+    }
+
+    @media (min-width: 1450px) {
+      .toc-panel {
+        display: block;
+        position: fixed;
+        left: 28px;
+        top: 120px;
+        width: 250px;
+        max-height: calc(100vh - 160px);
+        overflow-y: auto;
+        padding: 18px 16px;
+        border-left: 4px solid #d7dce2;
+        background: rgba(255, 255, 255, 0.94);
+        backdrop-filter: blur(4px);
+        z-index: 10;
+      }
+
+      .toc-panel h3 {
+        margin: 0 0 14px;
+        font-size: 1.2rem;
+        color: #333;
+      }
+
+      .toc-panel a {
+        display: block;
+        margin: 0 0 12px;
+        font-size: 1rem;
+        line-height: 1.35;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .toc-panel a:nth-of-type(1) { color: #1F5A96; }
+      .toc-panel a:nth-of-type(2) { color: #2F7A4A; }
+      .toc-panel a:nth-of-type(3) { color: #A23A3A; }
+      .toc-panel a:nth-of-type(4) { color: #6F4C9B; }
+      .toc-panel a:nth-of-type(5) { color: #2B7A78; }
+
+      .toc-panel a:hover {
+        text-decoration: underline;
+      }
+
+      .research-section {
+        scroll-margin-top: 28px;
+      }
+    }
+
     @media (max-width: 760px) {
       .page {
         width: min(100% - 28px, var(--max-width));
@@ -228,7 +279,17 @@ header-img: "img/research_pound.png"
   </style>
 </head>
 <body>
+  <nav class="toc-panel" aria-label="Research sections">
+    <h3>Contents</h3>
+    <a href="#attentional-suppression">Attentional Suppression of Distracting Stimuli</a>
+    <a href="#strategic-control">Strategic Control of Attention to Prevent Distraction</a>
+    <a href="#working-memory-filtering">Secondary Filtering of Distractors during Working Memory Encoding</a>
+    <a href="#improving-metrics">Improving Metrics of Attentional Allocation</a>
+    <a href="#theoretical-review">Theoretical Review of Attentional Capture and Suppression</a>
+  </nav>
+
   <main class="page">
+    <h1>Research</h1>
 
     <div class="intro">
       My research focuses on visual attention, perception, and cognitive control. In today’s information-rich world, attention must act as a gatekeeper, yet overloaded stimulation and ubiquitous distraction make this role especially difficult. A long-standing debate asks whether attention is inevitably captured by salient events or can be strategically suppressed. My work tackles this question, showing with psychophysics, eye-tracking, event-related potentials (ERPs), and multivariate EEG decoding methods how the brain flexibly resists distraction and achieves control. This line of inquiry not only advances fundamental theoretical understanding of attentional control, but also holds promising applications in areas such as computer vision, human factors engineering, autonomous driving, and public safety.
@@ -238,7 +299,7 @@ header-img: "img/research_pound.png"
       <img src="img/salient_dis_example.png" alt="Example of salient visual distraction.">
     </figure>
 
-    <section class="research-section section-blue">
+    <section id="attentional-suppression" class="research-section section-blue">
       <h2>Attentional Suppression of Distracting Stimuli</h2>
       <div class="research-grid">
         <div class="copy">
@@ -262,7 +323,7 @@ header-img: "img/research_pound.png"
       </div>
     </section>
 
-    <section class="research-section section-green">
+    <section id="strategic-control" class="research-section section-green">
       <h2>Strategic Control of Attention to Prevent Distraction</h2>
       <div class="text-only">
         <p>
@@ -282,7 +343,7 @@ header-img: "img/research_pound.png"
       </div>
     </section>
 
-    <section class="research-section section-red">
+    <section id="working-memory-filtering" class="research-section section-red">
       <h2>Secondary Filtering of Distractors during Working Memory Encoding</h2>
       <div class="research-grid reverse">
         <figure class="margin-figure right">
@@ -303,7 +364,7 @@ header-img: "img/research_pound.png"
       </div>
     </section>
 
-    <section class="research-section section-purple">
+    <section id="improving-metrics" class="research-section section-purple">
       <h2>Improving Metrics of Attentional Allocation</h2>
       <div class="text-only">
         <p>
@@ -322,7 +383,7 @@ header-img: "img/research_pound.png"
       </div>
     </section>
 
-    <section class="research-section section-teal">
+    <section id="theoretical-review" class="research-section section-teal">
       <h2>Theoretical Review of Attentional Capture and Suppression</h2>
       <div class="text-only">
         <p>
