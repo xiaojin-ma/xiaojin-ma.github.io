@@ -220,6 +220,14 @@ header-img: "img/research_pound.png"
       display: none;
     }
 
+
+    .toc-panel a.toc-blue   { color: #1F5A96; }
+    .toc-panel a.toc-green  { color: #2F7A4A; }
+    .toc-panel a.toc-red    { color: #A23A3A; }
+    .toc-panel a.toc-purple { color: #6F4C9B; }
+    .toc-panel a.toc-teal   { color: #2B7A78; }
+
+
     @media (min-width: 1700px) {
       .toc-panel {
         display: block;
@@ -251,12 +259,6 @@ header-img: "img/research_pound.png"
         text-decoration: none;
       }
 
-      .toc-panel a:nth-of-type(1) { color: #1F5A96; }
-      .toc-panel a:nth-of-type(2) { color: #2F7A4A; }
-      .toc-panel a:nth-of-type(3) { color: #A23A3A; }
-      .toc-panel a:nth-of-type(4) { color: #6F4C9B; }
-      .toc-panel a:nth-of-type(5) { color: #2B7A78; }
-
       .toc-panel a:hover {
         text-decoration: underline;
       }
@@ -266,34 +268,55 @@ header-img: "img/research_pound.png"
       }
     }
 
+    /* Laptop / smaller desktop: keep Research Projects in a right side column */
+    @media (min-width: 900px) and (max-width: 1699px) {
+      .page {
+        width: min(980px, calc(100% - 310px));
+        margin-left: 32px;
+        margin-right: 278px;
+      }
 
-    @media (max-width: 1699px) {
       .toc-panel {
         display: block;
-        position: static;
-        width: min(100% - 40px, 980px);
-        max-height: none;
-        overflow: visible;
-        margin: 28px auto 8px;
-        padding: 18px 20px;
+        position: fixed;
+        right: 18px;
+        left: auto;
+        top: 90px;
+        width: 235px;
+        max-height: calc(100vh - 120px);
+        overflow-y: auto;
+        padding: 16px 14px;
         border-left: 4px solid #d7dce2;
-        background: #fff;
-        backdrop-filter: none;
+        background: rgba(255, 255, 255, 0.96);
+        backdrop-filter: blur(4px);
+        z-index: 10;
       }
 
       .toc-panel h3 {
-        margin: 0 0 14px;
-        font-size: 2.4rem;
+        margin: 0 0 12px;
+        font-size: 1.65rem;
+        line-height: 1.15;
         color: #333;
       }
 
       .toc-panel a {
         display: block;
         margin: 0 0 12px;
-        font-size: 2rem;
-        line-height: 1.35;
+        font-size: 1.35rem;
+        line-height: 1.28;
         font-weight: 600;
         text-decoration: none;
+      }
+
+      .toc-panel a:hover {
+        text-decoration: underline;
+      }
+    }
+
+    /* Phones/tablets: do not let the TOC cover content */
+    @media (max-width: 899px) {
+      .toc-panel {
+        display: none;
       }
     }
 
@@ -312,11 +335,11 @@ header-img: "img/research_pound.png"
 <body>
   <nav class="toc-panel" aria-label="Research sections">
     <h3>Research Projects</h3>
-    <a href="#attentional-suppression">Attentional Suppression of Distracting Stimuli</a>
-    <a href="#strategic-control">Strategic Control of Attention to Prevent Distraction</a>
-    <!-- <a href="#working-memory-filtering">Secondary Filtering of Distractors during Working Memory Encoding</a> -->
-    <a href="#improving-metrics">Improving Metrics of Attentional Allocation</a>
-    <a href="#theoretical-review">Theoretical Review of Attentional Capture and Suppression</a>
+    <a class="toc-blue" href="#attentional-suppression">Attentional Suppression of Distracting Stimuli</a>
+    <a class="toc-green" href="#strategic-control">Strategic Control of Attention to Prevent Distraction</a>
+    <!-- <a class="toc-red" href="#working-memory-filtering">Secondary Filtering of Distractors during Working Memory Encoding</a> -->
+    <a class="toc-purple" href="#improving-metrics">Improving Metrics of Attentional Allocation</a>
+    <a class="toc-teal" href="#theoretical-review">Theoretical Review of Attentional Capture and Suppression</a>
   </nav>
 
   <main class="page">
